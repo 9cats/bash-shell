@@ -1,6 +1,6 @@
 #!/bin/bash
 # 功能：在 ~ 下创建一个 APP 目录用于存放docker部署的项目
-# 添加远程仓库示例: git remote add origin ubuntu@9cats.link:~/APP/.git
+# 添加远程仓库示例: git remote add deploy ubuntu@9cats.link:~/APP/.git
 # 注意：部署后还需要手动再更新容器（防止又运行了不改运行的）
 
 cd ~ #先切换到用户目录目录
