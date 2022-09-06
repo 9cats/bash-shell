@@ -1,13 +1,6 @@
 # 更新镜像源
 
-sudo vi /etc/apt/sources.list
-
-```
-deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free
-# deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free
-deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
-# deb-src http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
-
-# deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
-# deb-src http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
+```bash
+sudo sed -i "s@http://.*archive.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
+sudo sed -i "s@http://.*security.ubuntu.com@https://mirrors.tuna.tsinghua.edu.cn@g" /etc/apt/sources.list
 ```
